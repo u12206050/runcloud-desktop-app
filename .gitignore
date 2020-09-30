@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# osx
+.DS_Store
+
+# tauri
+/src-tauri/target

@@ -1,24 +1,28 @@
 <p align="center">
   <a href="https://runcloud.io">
-    <img alt="Runcloud IO" src="icon.png" >
+    <img width="100" alt="Runcloud IO" src="icon.png" >
   </a>
   <large>Runcloud Desktop App</large>
 </p>
-
-<img width="300" src="screenshots/welcome.png" />
-<img width="300" src="screenshots/servers.png" />
-<img width="300" src="screenshots/firewall.png" />
-<img width="300" src="screenshots/services.png" />
 
 OSX Desktop app for specifically managing Runcloud servers firewall.
 
 *(Download latest runcloudapp.dmg)[https://github.com/u12206050/runcloud-desktop-app/releases/download/0.1.0/runcloudapp.dmg]*
 
-## :two_hearts: Features
+## Features
 
  - Add comments for each firewall rule
  - Shows your current IP address as a help for adding new firewall rules
  - Very light weight and open source
+
+## Screenshots
+
+<p align="center">
+  <img width="500" src="screenshots/welcome.png" />
+  <img width="500" src="screenshots/servers.png" />
+  <img width="500" src="screenshots/firewall.png" />
+  <img width="500" src="screenshots/services.png" />
+</p>
 
 # Development
 

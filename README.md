@@ -12,6 +12,8 @@
 
 OSX Desktop app for specifically managing Runcloud servers firewall.
 
+*(Download latest runcloudapp.dmg)[https://github.com/u12206050/runcloud-desktop-app/releases/download/0.1.0/runcloudapp.dmg]*
+
 ## :two_hearts: Features
 
  - Add comments for each firewall rule

@@ -4,12 +4,12 @@
   </a>
 </p>
 <p align="center">
-  <large>Runcloud Desktop App</large>
+  <large>Runcloud Desktop App v0.1.1</large>
 </p>
 
 OSX Desktop app for specifically managing Runcloud server's firewall and services.
 
-*[Download latest runcloudapp.dmg](https://github.com/u12206050/runcloud-desktop-app/releases/download/0.1.0/runcloudapp.dmg)*
+*[Download latest runcloudapp.dmg](https://github.com/u12206050/runcloud-desktop-app/releases/download/0.1.1/runcloudapp_0.1.1_x64.dmg)*
 
 ## Features
 

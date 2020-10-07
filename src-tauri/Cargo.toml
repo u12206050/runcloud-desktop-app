@@ -1,6 +1,6 @@
 [package]
 name = "Runcloud"
-version = "0.1.0"
+version = "0.1.1"
 description = "A desktop app for the Runcloud platform"
 authors = [ "Gerard Lamusse" ]
 license = "MIT"

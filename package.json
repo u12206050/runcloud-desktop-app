@@ -1,6 +1,6 @@
 {
   "name": "runcloudapp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service tauri:serve",
@@ -14,16 +14,16 @@
     "core-js": "^3.6.5",
     "material-icons": "^0.3.1",
     "vue": "^2.6.11",
-    "vuesax": "^3.11.17"
+    "vuesax": "^3.12.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-plugin-babel": "^4.5.7",
+    "@vue/cli-plugin-eslint": "^4.5.7",
+    "@vue/cli-service": "^4.5.7",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "tailwindcss": "^1.8.6",
+    "tailwindcss": "^1.8.12",
     "vue-cli-plugin-tauri": "~0.12.1",
     "vue-template-compiler": "^2.6.11"
   },

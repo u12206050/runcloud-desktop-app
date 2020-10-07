@@ -57,7 +57,7 @@
 
     <div class="bg-gray-200 border-t border-gray-400 p-2 text-sm flex justify-between">
       <p>Created by Gerard Lamusse 2020</p>
-      <p>Your ip: <span class="select-all cursor-pointer hover:text-primary" @click="copyIP">{{ $store.ip }}</span></p>
+      <p><span class="cursor-pointer">{{ refreshing ? 'Refreshing…' : '⟳ Your ip' }}</span>: <span class="select-all cursor-pointer hover:text-primary" @click="copyIP">{{ $store.ip }}</span></p>
 
       <vs-popup :title="popup && popup.title" :active.sync="showPopup">
         <component v-if="popup" :is="popup.comp" @close="showPopup = false"></component>
@@ -84,6 +84,7 @@ export default {
   },
   data () {
     return {
+      refreshing: false,
       tab: 0,
       loading: true,
       activeItem: null,
@@ -93,6 +94,12 @@ export default {
     }
   },
   methods: {
+    async refreshIP () {
+      this.refreshing = true
+      const { ip } = await this.$rc.http.get('https://api.ipify.org?format=json')
+      this.$store.ip = ip
+      this.refreshing = false
+    },
     copyIP () {
       document.execCommand("copy");
       this.$vs.notify({title: 'Copied', color: 'success'})
@@ -142,8 +149,7 @@ export default {
   },
   async mounted () {
     this.$vs.loading()
-    const { ip } = await this.$rc.http.get('https://api.ipify.org?format=json')
-    this.$store.ip = ip
+    await refreshIP()
     if (this.loaded) {
       this.$vs.loading.close()
       this.loading = false

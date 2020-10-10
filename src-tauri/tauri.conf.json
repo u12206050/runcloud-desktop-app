@@ -1,5 +1,7 @@
 {
-  "ctx": {},
+  "ctx": {
+    "exitOnPanic": true
+  },
   "tauri": {
     "embeddedServer": {
       "active": true
@@ -17,7 +19,7 @@
       ],
       "resources": [],
       "externalBin": [],
-      "copyright": "",
+      "copyright": "MIT",
       "category": "DeveloperTool",
       "shortDescription": "",
       "longDescription": "",

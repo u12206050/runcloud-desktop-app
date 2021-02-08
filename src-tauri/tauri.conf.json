@@ -35,7 +35,10 @@
       "exceptionDomain": ""
     },
     "allowlist": {
-      "all": true
+      "all": false,
+      "http-request": true,
+      "read-text-file": true,
+      "write-file": true
     },
     "window": {
       "title": "Runcloud IO",
